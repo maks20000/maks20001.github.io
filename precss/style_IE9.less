@@ -1,0 +1,73 @@
+@import "smart-grid.less";
+
+
+header {
+	.item {
+		display:block;
+		.text {
+			
+		}
+		.img {
+			margin-top: 40px;
+		}
+		.btn {
+			margin-top:70px;
+		}
+	}
+}
+
+.see {
+	.row {
+		.row-float();
+		margin-right: -146px;
+	}
+	.item {
+		.col-float();
+	}
+		
+	&__ipad {
+		.size(5);
+		position: absolute;
+		right: 0;
+	}
+}
+
+.projects {
+	&__row {
+		.row-float();
+		&__item {
+			.col-float();		
+		}
+	}
+}
+
+footer {
+	.row {
+		.row-float();
+		.item {
+			position: relative;
+			.col-float();
+			ul {
+				.sm-block({
+					position: absolute;
+					//left:0;
+					right:10%;
+				});
+				.xxs-block({
+					position: static;
+				});
+				li {
+					.sm-block({
+						display: block;
+						float: left;
+						margin-right: 20px;
+					});
+					.xxs-block ({
+						margin-top: 0px;
+						float: none;
+					});
+				}
+			}
+		}
+	}
+}

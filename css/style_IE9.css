@@ -1,0 +1,88 @@
+header .item {
+  display: block;
+}
+
+header .item .img {
+  margin-top: 40px;
+}
+
+header .item .btn {
+  margin-top: 70px;
+}
+
+.see .row {
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-right: -146px;
+}
+
+.see .row::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.see .item {
+  float: left;
+}
+
+.see__ipad {
+  width: calc(41.66666666666667% - 10px);
+  position: absolute;
+  right: 0;
+}
+
+.projects__row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.projects__row::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.projects__row__item {
+  float: left;
+}
+
+footer .row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+footer .row::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+footer .row .item {
+  position: relative;
+  float: left;
+}
+
+@media screen and (max-width: 720px) {
+  footer .row .item ul {
+    position: absolute;
+    right: 10%;
+  }
+
+  footer .row .item ul li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  footer .row .item ul {
+    position: static;
+  }
+
+  footer .row .item ul li {
+    margin-top: 0px;
+    float: none;
+  }
+}
